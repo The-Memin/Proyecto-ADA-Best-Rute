@@ -11,9 +11,8 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-//routes
+//routes 
 app.use('/api/comercios',require('./routes/comercios'));
-
 //Starting the server
 app.listen(app.get('port'),() => {
     console.log(`Server on port ${app.get('port')}`);
