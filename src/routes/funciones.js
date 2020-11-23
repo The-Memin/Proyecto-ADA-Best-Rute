@@ -1,3 +1,4 @@
+
 const fun = {};
 
 function entidadf(estado){
@@ -19,8 +20,6 @@ function region(Estado, Municipio, Colonia, Tipo){
         if(Municipio !=" ")
             lugar+=" ";
         lugar += Colonia;
-        if(Tipo !=" ")
-            lugar+=" ";
     }
     if(Tipo != " "){
         if(Municipio !=" ")
@@ -31,7 +30,7 @@ function region(Estado, Municipio, Colonia, Tipo){
         lugar += Estado;
 
     lugar += '/'+entidadf(Estado);
-    lugar += '/1/10/7715bb2a-6563-49e3-952e-e81a8ccc79bc'
+    lugar += '/1/100/7715bb2a-6563-49e3-952e-e81a8ccc79bc'
     return lugar;
 }
 
